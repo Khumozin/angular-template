@@ -1,0 +1,5 @@
+npm run prettier
+
+ng lint --fix
+
+ng test --watch=false --code-coverage --browsers=ChromeHeadless
