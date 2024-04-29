@@ -44,5 +44,9 @@ Thumbs.db
 package.json
 package-lock.json
 yarn.lock
+README.md
+
 
 .nx/*
+.vscode/*
+.husky/*
