@@ -15,12 +15,12 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render title', () => {
+  it('should toggle menu', () => {
     const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain(
-      'Angular Template'
-    );
+    const app = fixture.componentInstance;
+
+    app.toggleMenu();
+
+    expect(app.isExpanded).toBeTrue();
   });
 });

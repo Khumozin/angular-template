@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "prettier": "npx prettier --write $(git diff --staged --name-only --diff-filter d | grep -E '\\.(ts|json|scss|html)$' | xargs)",
+    "prettier": "git diff --staged --name-only --diff-filter=d | grep -E '\\.(ts|json|scss|html)$' | xargs npx prettier --write && git add $(git diff --staged --name-only --diff-filter=d | grep -E '\\.(ts|json|scss|html)$')",
     "prepare": "husky",
     "commit": "git-cz",
     "e2e": "ng e2e",
