@@ -1,4 +1,4 @@
-npm run prettier
+node prettier-hook.js
 
 ng lint --fix
 
