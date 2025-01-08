@@ -6,7 +6,6 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss',
-  standalone: true,
   imports: [MatButtonModule, MatProgressSpinnerModule],
 })
 export class SidebarComponent {
