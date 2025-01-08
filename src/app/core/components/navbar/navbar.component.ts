@@ -5,7 +5,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
-  standalone: true,
   imports: [MatToolbarModule],
 })
 export class NavbarComponent {}

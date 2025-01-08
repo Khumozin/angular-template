@@ -5,7 +5,6 @@ import { SHELL } from './core/components';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   imports: [SHELL, MatSidenavModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
