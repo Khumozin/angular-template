@@ -1,27 +1,126 @@
-# AngularTemplate
+# Angular Project Template
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+This project serves as a template for building robust Angular applications. It incorporates modern Angular development features such as standalone APIs, Angular Material, and various tools for enhancing code quality, consistency, and testing.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Standalone APIs**: Utilize Angular's standalone components and APIs for modular and scalable application development.
+- **Angular Material**: Preconfigured with Angular Material for a sleek and responsive UI.
+- **Husky**: Automate Git hooks for ensuring code quality and consistent commits.
+- **ESLint**: Enforces coding standards and prevents common pitfalls.
+- **Prettier**: Automatically formats code to maintain a clean and consistent style.
+- **Commitizen**: Standardizes commit messages for better collaboration and readability.
+- **Cypress**: End-to-end testing for verifying user workflows and application behavior.
+- **Jasmine & Karma**: Unit testing framework and test runner for comprehensive code coverage.
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Prerequisites
 
-## Build
+Ensure you have the following installed on your system:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- [Node.js](https://nodejs.org/) (v22 or later recommended)
+- [Angular CLI](https://angular.io/cli) (v19)
+- [Git](https://git-scm.com/)
 
-## Running unit tests
+### Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository:
 
-## Running end-to-end tests
+   ```
+   git clone <repository-url>
+   cd <repository-name>
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. Install dependencies:
 
-## Further help
+    ```
+    npm install
+    ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. Set up Husky hooks:
+
+    ```
+    npx husky install
+    ```
+
+### Running the Project
+
+1. Development Server:
+
+    ```
+    ng serve
+    ```
+
+    Open `http://localhost:4200`
+
+2. Build:
+
+    ```
+    ng build
+    ```
+
+    Compiles the project for production.
+
+3. Unit Tests:
+
+    ```
+    ng test
+    ```
+
+4. E2E Tests:
+
+    ```
+    npx cypress open
+    ```
+
+### Code Quality Tools
+
+1. Linting:
+
+    Run ESLint to check for linting errors:
+    ```
+    npm run lint
+    ```
+
+2. Formatting:
+
+    Format code using Prettier:
+    ```
+    npm run prettier
+    ```
+
+3. Commit Messages:
+
+    Use Commitizen for crafting commit messages:
+    ```
+    npm run commit
+    ```
+
+### Project Structure
+
+```
+src/
+├── app/
+│   ├── core/          # Core (services, interceptors, etc.)
+│   ├── shared/        # Shared (common components, directives, pipes)
+│   ├── features/      # Features (shopping-cart, user-profile, etc.)
+│   ├── app.component.ts
+│   └── app.config.ts
+├── assets/            # Static assets
+├── environments/      # Environment configurations
+```
+
+### Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a feature branch (git checkout -b feature-name).
+3. Commit changes following the commit message guidelines.
+4. Push to the branch (git push origin feature-name).
+5. Open a Pull Request.
+
+### License
+
+This project is licensed under the `MIT License`. See the LICENSE file for details.
