@@ -111,6 +111,10 @@ src/
 ├── environments/      # Environment configurations
 ```
 
+### Renaming Project
+
+Use any of this scripts ([ngx-rename](https://github.com/khumozin/ngx-rename)), based on your OS:
+
 ### Contributing
 
 Contributions are welcome! Please follow these steps:
